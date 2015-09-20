@@ -1,0 +1,8 @@
+cropId=5
+name=µØ¹Ï
+pic=seed.png
+stageCount=5
+unitTime=18
+sellMoney=40
+seedMoney=20
+buyLevel=2

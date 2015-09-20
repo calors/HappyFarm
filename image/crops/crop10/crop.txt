@@ -1,0 +1,8 @@
+cropId=10
+name=до╧о
+pic=seed.png
+stageCount=5
+unitTime=26
+sellMoney=50
+seedMoney=30
+buyLevel=4

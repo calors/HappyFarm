@@ -1,0 +1,9 @@
+cropId=2
+name=ÓñÃ×
+pic=seed.png
+stageCount=5
+unitTime=12
+sellMoney=30
+seedMoney=15
+buyLevel=1
+

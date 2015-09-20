@@ -1,0 +1,8 @@
+cropId=4
+name=ºúÂÜ²·
+pic=seed.png
+stageCount=4
+unitTime=16
+sellMoney=37
+seedMoney=19
+buyLevel=1

@@ -1,0 +1,11 @@
+#\u7528\u6237\u4FE1\u606F
+#Thu Sep 17 22:26:26 CST 2015
+nick=
+level=1
+money=1030.0
+exp=43
+pic=2-1.gif
+userName=
+notice=\u3002\u3002\u3002\u3002\u3002\u3002\u3002\u3002\u3002\u3002\u3002\u3002\u3002\u3002\u3002\u3002
+pass=asd
+userID=0001

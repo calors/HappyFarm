@@ -1,0 +1,8 @@
+cropId=14
+name=Ьвзг
+pic=seed.png
+stageCount=5
+unitTime=34
+sellMoney=62
+seedMoney=38
+buyLevel=6

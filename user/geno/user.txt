@@ -1,0 +1,11 @@
+#\u7528\u6237\u4FE1\u606F
+#Sun Sep 20 17:27:51 CST 2015
+nick=
+level=1
+money=11510.0
+exp=145
+pic=10-1.gif
+userName=
+notice=\uFF01\uFF01\uFF01\uFF01\uFF01\uFF01\uFF01\uFF01\uFF01\uFF01
+pass=yijiabin
+userID=geno

@@ -1,0 +1,8 @@
+cropId=1
+name=²ÝÝ®
+pic=seed.png
+stageCount=5
+unitTime=2
+sellMoney=20
+seedMoney=10
+buyLevel=1
