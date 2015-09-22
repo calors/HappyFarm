@@ -18,18 +18,6 @@ import tools.LandRW;
 import view.farm.Farm;
 
 
-/**
-* This code was edited or generated using CloudGarden's Jigloo
-* SWT/Swing GUI Builder, which is free for non-commercial
-* use. If Jigloo is being used commercially (ie, by a corporation,
-* company or business for any purpose whatever) then you
-* should purchase a license for each developer using Jigloo.
-* Please visit www.cloudgarden.com for details.
-* Use of Jigloo implies acceptance of these licensing terms.
-* A COMMERCIAL LICENSE HAS NOT BEEN PURCHASED FOR
-* THIS MACHINE, SO JIGLOO OR THIS CODE CANNOT BE USED
-* LEGALLY FOR ANY CORPORATE OR COMMERCIAL PURPOSE.
-*/
 public class LandLabel extends JLabel {
 	private JLabel labelBackground;// 放土地的背景图
 	private JLabel labelCrop;// 以后放每个农作物的成长阶段图片
@@ -184,7 +172,7 @@ public class LandLabel extends JLabel {
 	}
 
 	/*
-	 * 采摘
+	 * 采摘or偷取
 	 */
 	private void pick() {
 		if (landData.getCropID() == -1) {
@@ -198,14 +186,16 @@ public class LandLabel extends JLabel {
 			if (farm.nowUserID == Farm.USERID) {// 自己的农场
 				FruitBean fruit = new FruitBean(nowCrop, nowCropFruitCount);
 				FruitRW.addTOStoreList(fruit);
-				farm.flushUserMsg(0, 1);
+				farm.flushUserMsg(0, 1);//刷新经验
 				landData.setIsEndStage(1);
+				landData.setFruitNum(0);
 				LandRW.landDataMap.put(landNum, landData);
 				LandRW.saveLandMsg(Farm.USERID);
 				isPick = true;
 				flushPic(nowStage);
 				JOptionPane.showMessageDialog(this, "成功采摘" + nowCropFruitCount
 						+ "个" + nowCrop.getName());
+				nowCropFruitCount=0;
 			} else {// 好友的农场
 				if (isSteal || landData.getStealName().contains(Farm.USERID)) {// 偷过了
 					JOptionPane.showMessageDialog(this, "你已经偷过啦~");
@@ -216,9 +206,9 @@ public class LandLabel extends JLabel {
 						FruitRW.addTOStoreList(fruit);
 						int stealCount = landData.getStealCount() + stealNum;
 						String stealName = landData.getStealName()
-								+ Farm.USERID + " ";
+								+ Farm.USERID;
 						landData.setStealCount(stealCount);
-						landData.setStealName(stealName);
+						landData.setStealName(stealName+"-");
 						LandRW.landDataMap.put(landNum, landData);
 						LandRW.saveLandMsg(farm.nowUserID);
 						isSteal = true;

@@ -109,7 +109,7 @@ public class LandRW {
 			landData.setIsEndStage(0);
 			landData.setFruitNum(0);
 			landData.setStealCount(0);
-			landData.setStealName("");
+			landData.setStealName("-");
 			landDataMap.put(i, landData);
 		}
 		saveLandMsg(userID);
