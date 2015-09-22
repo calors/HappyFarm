@@ -212,7 +212,6 @@ public class LandLabel extends JLabel {
 						LandRW.landDataMap.put(landNum, landData);
 						LandRW.saveLandMsg(farm.nowUserID);
 						isSteal = true;
-						nowCropFruitCount=0;
 						JOptionPane.showMessageDialog(this, "成功偷取" + stealNum
 								+ "个" + nowCrop.getName());
 					} else {
